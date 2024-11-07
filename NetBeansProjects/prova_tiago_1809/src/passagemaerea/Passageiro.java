@@ -15,7 +15,7 @@ package passagemaerea;
 
     public Passageiro(String nome, String documento) {
         this.nome = nome;
-        this.documento = doc umento;
+        this.documento = documento;
     }
 
     public String getNome() {
