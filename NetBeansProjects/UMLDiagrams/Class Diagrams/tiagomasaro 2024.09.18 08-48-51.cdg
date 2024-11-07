@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="tiagomasaro">
+  <ClassDiagramComponents>
+    <Class name="MediaNotas" package="atividade0702" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TabuadaInterativa" package="atividade0702" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VerificacaoIdade" package="atividade0702" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VerificacaoNumeros" package="atividade0702" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VerificacaoNumerosPares" package="atividade0702" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Aluno" package="atividadeRevisao0307" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="nomeA" type="String" visibility="private"/>
+        <Field name="cadastroA" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeA" returnType="String" visibility="public"/>
+        <Method name="setNomeA" returnType="void" visibility="public">
+          <Argument type="String" name="nomeA"/>
+        </Method>
+        <Method name="getCadastroA" returnType="int" visibility="public"/>
+        <Method name="setCadastroA" returnType="void" visibility="public">
+          <Argument type="int" name="cadastroA"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Disciplina" package="atividadeRevisao0307" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="nomeD" type="String" visibility="private"/>
+        <Field name="quant_displ" type="int" visibility="private"/>
+        <Field name="aln" type="Aluno" visibility="package"/>
+        <Field name="pro" type="Professor" visibility="package"/>
+        <Field name="tur" type="Turma" visibility="package"/>
+        <Field name="not" type="Notas" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Aluno" name="aln"/>
+          <Argument type="Professor" name="pro"/>
+          <Argument type="Turma" name="tur"/>
+          <Argument type="Notas" name="not"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNomeD" returnType="String" visibility="public"/>
+        <Method name="setNomeD" returnType="void" visibility="public">
+          <Argument type="String" name="nomeD"/>
+        </Method>
+        <Method name="getQuant_displ" returnType="int" visibility="public"/>
+        <Method name="setQuant_displ" returnType="void" visibility="public">
+          <Argument type="int" name="quant_displ"/>
+        </Method>
+        <Method name="getAln" returnType="Aluno" visibility="public"/>
+        <Method name="setAln" returnType="void" visibility="public">
+          <Argument type="Aluno" name="aln"/>
+        </Method>
+        <Method name="getPro" returnType="Professor" visibility="public"/>
+        <Method name="setPro" returnType="void" visibility="public">
+          <Argument type="Professor" name="pro"/>
+        </Method>
+        <Method name="getTur" returnType="Turma" visibility="public"/>
+        <Method name="setTur" returnType="void" visibility="public">
+          <Argument type="Turma" name="tur"/>
+        </Method>
+        <Method name="visualizadorDisciplina" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Notas" package="atividadeRevisao0307" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="nota1" type="double" visibility="private"/>
+        <Field name="nota2" type="double" visibility="private"/>
+        <Field name="nota3" type="double" visibility="private"/>
+        <Field name="mediaNotas" type="double" visibility="private"/>
+        <Field name="somaNotas" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNota1" returnType="double" visibility="public"/>
+        <Method name="setNota1" returnType="void" visibility="public">
+          <Argument type="double" name="nota1"/>
+        </Method>
+        <Method name="getNota2" returnType="double" visibility="public"/>
+        <Method name="setNota2" returnType="void" visibility="public">
+          <Argument type="double" name="nota2"/>
+        </Method>
+        <Method name="getNota3" returnType="double" visibility="public"/>
+        <Method name="setNota3" returnType="void" visibility="public">
+          <Argument type="double" name="nota3"/>
+        </Method>
+        <Method name="getMediaNotas" returnType="double" visibility="public"/>
+        <Method name="setMediaNotas" returnType="void" visibility="public">
+          <Argument type="double" name="mediaNotas"/>
+        </Method>
+        <Method name="getSomaNotas" returnType="double" visibility="public"/>
+        <Method name="setSomaNotas" returnType="void" visibility="public">
+          <Argument type="double" name="somaNotas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Professor" package="atividadeRevisao0307" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="nomeP" type="String" visibility="private"/>
+        <Field name="cadastroP" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeP" returnType="String" visibility="public"/>
+        <Method name="setNomeP" returnType="void" visibility="public">
+          <Argument type="String" name="nomeP"/>
+        </Method>
+        <Method name="getCadastroP" returnType="int" visibility="public"/>
+        <Method name="setCadastroP" returnType="void" visibility="public">
+          <Argument type="int" name="cadastroP"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Teste" package="atividadeRevisao0307" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Turma" package="atividadeRevisao0307" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="nomeT" type="String" visibility="private"/>
+        <Field name="quant_alun" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeT" returnType="String" visibility="public"/>
+        <Method name="setNomeT" returnType="void" visibility="public">
+          <Argument type="String" name="nomeT"/>
+        </Method>
+        <Method name="getQuant_alun" returnType="int" visibility="public"/>
+        <Method name="setQuant_alun" returnType="void" visibility="public">
+          <Argument type="int" name="quant_alun"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AtualizadorDeContas" package="banco" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="saldoTotal" type="double" visibility="private"/>
+        <Field name="selic" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="double" name="selic"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="roda" returnType="void" visibility="package">
+          <Argument type="Conta" name="c"/>
+        </Method>
+        <Method name="getSaldoTotal" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="banco" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="nomeCliente" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeCliente" returnType="String" visibility="public"/>
+        <Method name="setNomeCliente" returnType="void" visibility="public">
+          <Argument type="String" name="nomeCliente"/>
+        </Method>
+        <Method name="getCpfCliente" returnType="String" visibility="public"/>
+        <Method name="setCpfCliente" returnType="void" visibility="public">
+          <Argument type="String" name="cpfCliente"/>
+        </Method>
+        <Method name="getDataNascimento" returnType="String" visibility="public"/>
+        <Method name="setDataNascimento" returnType="void" visibility="public">
+          <Argument type="String" name="dataNascimento"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Conta" package="banco" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="numero" type="int" visibility="private"/>
+        <Field name="saldo" type="double" visibility="private"/>
+        <Field name="limite" type="double" visibility="private"/>
+        <Field name="identificador" type="int" visibility="private"/>
+        <Field name="objCliente" type="Cliente" visibility="package"/>
+        <Field name="totalDecontas" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+        <Constructor visibility="package">
+          <Argument type="double" name="saldo"/>
+        </Constructor>
+        <Constructor visibility="package">
+          <Argument type="double" name="saldo"/>
+          <Argument type="double" name="limite"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdentificador" returnType="int" visibility="public"/>
+        <Method name="getTotalDecontas" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="getSaldo" returnType="double" visibility="public"/>
+        <Method name="setSaldo" returnType="void" visibility="public">
+          <Argument type="double" name="saldo"/>
+        </Method>
+        <Method name="getLimite" returnType="double" visibility="public"/>
+        <Method name="setLimite" returnType="void" visibility="public">
+          <Argument type="double" name="limite"/>
+        </Method>
+        <Method name="saca" returnType="boolean" visibility="public">
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="deposita" returnType="void" visibility="public">
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="tranfere" returnType="void" visibility="public">
+          <Argument type="Conta" name="destino"/>
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="atualiza" returnType="void" visibility="package" isAbstract="true">
+          <Argument type="double" name="taxa"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ContaCorrente" package="banco" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="deposita" returnType="void" visibility="public">
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="atualiza" returnType="void" visibility="package">
+          <Argument type="double" name="taxa"/>
+        </Method>
+        <Method name="calculaTributos" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ContaPoupanca" package="banco" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="atualiza" returnType="void" visibility="package">
+          <Argument type="double" name="taxa"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Funcionario" package="banco" visibility="public" isAbstract="true" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="departamento" type="String" visibility="private"/>
+        <Field name="salario" type="double" visibility="private"/>
+        <Field name="ativo" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nome"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDepartamento" returnType="String" visibility="public"/>
+        <Method name="setDepartamento" returnType="void" visibility="public">
+          <Argument type="String" name="departamento"/>
+        </Method>
+        <Method name="getDataEntrada" returnType="String" visibility="public"/>
+        <Method name="setDataEntrada" returnType="void" visibility="public">
+          <Argument type="String" name="dataEntrada"/>
+        </Method>
+        <Method name="getRG" returnType="String" visibility="public"/>
+        <Method name="setRG" returnType="void" visibility="public">
+          <Argument type="String" name="RG"/>
+        </Method>
+        <Method name="getSalario" returnType="double" visibility="public"/>
+        <Method name="setSalario" returnType="void" visibility="public">
+          <Argument type="double" name="salario"/>
+        </Method>
+        <Method name="isAtivo" returnType="boolean" visibility="public"/>
+        <Method name="setAtivo" returnType="void" visibility="public">
+          <Argument type="boolean" name="ativo"/>
+        </Method>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+        <Method name="bonifica" returnType="void" visibility="public">
+          <Argument type="double" name="aumento"/>
+        </Method>
+        <Method name="demite" returnType="void" visibility="public"/>
+        <Method name="mostra" returnType="void" visibility="public"/>
+        <Method name="getBonificacao" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="GerenciadorDeImpostoDeRenda" package="banco" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="total" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="adiciona" returnType="void" visibility="package">
+          <Argument type="Tributavel" name="t"/>
+        </Method>
+        <Method name="getTotal" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gerente" package="banco" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="senha" type="int" visibility="private"/>
+        <Field name="numeroDeFuncionariosGerenciados" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="senha"/>
+          <Argument type="int" name="numeroDeFuncionariosGerenciados"/>
+          <Argument type="String" name="nome"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSenha" returnType="int" visibility="public"/>
+        <Method name="setSenha" returnType="void" visibility="public">
+          <Argument type="int" name="senha"/>
+        </Method>
+        <Method name="getNumeroDeFuncionariosGerenciados" returnType="int" visibility="public"/>
+        <Method name="setNumeroDeFuncionariosGerenciados" returnType="void" visibility="public">
+          <Argument type="int" name="numeroDeFuncionariosGerenciados"/>
+        </Method>
+        <Method name="autentica" returnType="boolean" visibility="public">
+          <Argument type="int" name="senha"/>
+        </Method>
+        <Method name="getBonificacao" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Secretaria" package="banco" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nome"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBonificacao" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SeguroDeVida" package="banco" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calculaTributos" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Supervisor" package="banco" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nome"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBonificacao" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TesteAtualizadorDeContas" package="banco" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteConstrutor" package="banco" visibility="public" xPosition="2120.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteConta" package="banco" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteFuncionario" package="banco" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteGerenciadorDeImpostoDeRenda" package="banco" visibility="public" xPosition="620.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteHeranca" package="banco" visibility="public" xPosition="920.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteReferencia" package="banco" visibility="public" xPosition="1220.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteTransfere" package="banco" visibility="public" xPosition="1520.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteTributavel" package="banco" visibility="public" xPosition="1820.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Tributavel" package="banco" visibility="public" xPosition="2120.0" yPosition="1220.0">
+      <Methods>
+        <Method name="calculaTributos" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="Conta" package="banco_3" visibility="public" isAbstract="true" xPosition="20.0" yPosition="1620.0">
+      <Fields>
+        <Field name="numero" type="int" visibility="private"/>
+        <Field name="saldo" type="double" visibility="private"/>
+        <Field name="limite" type="double" visibility="private"/>
+        <Field name="identificador" type="int" visibility="private"/>
+        <Field name="totalDecontas" type="int" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+        <Constructor visibility="package">
+          <Argument type="double" name="saldo"/>
+        </Constructor>
+        <Constructor visibility="package">
+          <Argument type="double" name="saldo"/>
+          <Argument type="double" name="limite"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdentificador" returnType="int" visibility="public"/>
+        <Method name="getTotalDecontas" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="getSaldo" returnType="double" visibility="public"/>
+        <Method name="setSaldo" returnType="void" visibility="public">
+          <Argument type="double" name="saldo"/>
+        </Method>
+        <Method name="getLimite" returnType="double" visibility="public"/>
+        <Method name="setLimite" returnType="void" visibility="public">
+          <Argument type="double" name="limite"/>
+        </Method>
+        <Method name="saca" returnType="boolean" visibility="public">
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="deposita" returnType="void" visibility="public">
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="tranfere" returnType="void" visibility="public">
+          <Argument type="Conta" name="destino"/>
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="atualiza" returnType="void" visibility="package" isAbstract="true">
+          <Argument type="double" name="taxa"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ContaCorrente" package="banco_3" visibility="public" xPosition="320.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="deposita" returnType="void" visibility="public">
+          <Argument type="double" name="quantidade"/>
+        </Method>
+        <Method name="atualiza" returnType="void" visibility="package">
+          <Argument type="double" name="taxa"/>
+        </Method>
+        <Method name="calculaTributos" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ContaPoupanca" package="banco_3" visibility="public" xPosition="620.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="atualiza" returnType="void" visibility="package">
+          <Argument type="double" name="taxa"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestaDeposita" package="banco_3" visibility="public" xPosition="920.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Tributavel" package="banco_3" visibility="public" xPosition="1220.0" yPosition="1620.0">
+      <Methods>
+        <Method name="calculaTributos" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="ValorInvalidoException" package="banco_3" visibility="public" xPosition="1520.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="double" name="valor"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Interface name="Conta" package="banco_2" visibility="public" xPosition="1820.0" yPosition="1620.0">
+      <Methods>
+        <Method name="getSaldo" returnType="double" visibility="package"/>
+        <Method name="deposita" returnType="void" visibility="package">
+          <Argument type="double" name="valor"/>
+        </Method>
+        <Method name="saca" returnType="void" visibility="package">
+          <Argument type="double" name="valor"/>
+        </Method>
+        <Method name="atualiza" returnType="void" visibility="package">
+          <Argument type="double" name="taxaSelic"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Class name="ContaCorrente" package="banco_2" visibility="public" xPosition="2120.0" yPosition="1620.0">
+      <Fields>
+        <Field name="Saldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSaldo" returnType="double" visibility="public"/>
+        <Method name="deposita" returnType="void" visibility="public">
+          <Argument type="double" name="valor"/>
+        </Method>
+        <Method name="saca" returnType="void" visibility="public">
+          <Argument type="double" name="valor"/>
+        </Method>
+        <Method name="atualiza" returnType="void" visibility="public">
+          <Argument type="double" name="taxaSelic"/>
+        </Method>
+        <Method name="calculaTributos" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ContaPoupanca" package="banco_2" visibility="public" xPosition="20.0" yPosition="2020.0">
+      <Fields>
+        <Field name="Saldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getSaldo" returnType="double" visibility="public"/>
+        <Method name="deposita" returnType="void" visibility="public">
+          <Argument type="double" name="valor"/>
+        </Method>
+        <Method name="saca" returnType="void" visibility="public">
+          <Argument type="double" name="valor"/>
+        </Method>
+        <Method name="atualiza" returnType="void" visibility="public">
+          <Argument type="double" name="taxaSelic"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ContaTributavel" package="banco_2" visibility="public" xPosition="320.0" yPosition="2020.0">
+      <Methods/>
+    </Interface>
+    <Class name="TesteContas" package="banco_2" visibility="public" xPosition="620.0" yPosition="2020.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Tributavel" package="banco_2" visibility="public" xPosition="920.0" yPosition="2020.0">
+      <Methods>
+        <Method name="calculaTributos" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="Casa" package="casa" visibility="public" xPosition="1220.0" yPosition="2020.0">
+      <Fields>
+        <Field name="cor" type="String" visibility="private"/>
+        <Field name="porta1" type="Porta" visibility="package"/>
+        <Field name="porta2" type="Porta" visibility="package"/>
+        <Field name="porta3" type="Porta" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="pinta" returnType="void" visibility="public">
+          <Argument type="String" name="cor"/>
+        </Method>
+        <Method name="quantasPortasEstaoAbertas" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pessoa" package="casa" visibility="public" xPosition="1520.0" yPosition="2020.0">
+      <Fields>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="idade" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNome" returnType="String" visibility="public"/>
+        <Method name="setNome" returnType="void" visibility="public">
+          <Argument type="String" name="nome"/>
+        </Method>
+        <Method name="getIdade" returnType="int" visibility="public"/>
+        <Method name="setIdade" returnType="void" visibility="public">
+          <Argument type="int" name="idade"/>
+        </Method>
+        <Method name="fazAniversario" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Porta" package="casa" visibility="public" xPosition="1820.0" yPosition="2020.0">
+      <Fields>
+        <Field name="aberta" type="boolean" visibility="private"/>
+        <Field name="cor" type="String" visibility="private"/>
+        <Field name="dimensaoX" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCor" returnType="String" visibility="public"/>
+        <Method name="setCor" returnType="void" visibility="public">
+          <Argument type="String" name="cor"/>
+        </Method>
+        <Method name="getDimensaoX" returnType="double" visibility="public"/>
+        <Method name="setDimensaoX" returnType="void" visibility="public">
+          <Argument type="double" name="dimensaoX"/>
+        </Method>
+        <Method name="getDimensaoY" returnType="double" visibility="public"/>
+        <Method name="setDimensaoY" returnType="void" visibility="public">
+          <Argument type="double" name="dimensaoY"/>
+        </Method>
+        <Method name="getDimensaoZ" returnType="double" visibility="public"/>
+        <Method name="setDimensaoZ" returnType="void" visibility="public">
+          <Argument type="double" name="dimensaoZ"/>
+        </Method>
+        <Method name="abre" returnType="void" visibility="public"/>
+        <Method name="fecha" returnType="void" visibility="public"/>
+        <Method name="pinta" returnType="void" visibility="public">
+          <Argument type="String" name="cor"/>
+        </Method>
+        <Method name="estaAberta" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TesteCasa" package="casa" visibility="public" xPosition="2120.0" yPosition="2020.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestePessoa" package="casa" visibility="public" xPosition="20.0" yPosition="2420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TestePorta" package="casa" visibility="public" xPosition="320.0" yPosition="2420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="contasPagas" visibility="public" xPosition="620.0" yPosition="2420.0">
+      <Fields>
+        <Field name="NomeCliente" type="String" visibility="private"/>
+        <Field name="cpf" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeCliente" returnType="String" visibility="public"/>
+        <Method name="setNomeCliente" returnType="void" visibility="public">
+          <Argument type="String" name="NomeCliente"/>
+        </Method>
+        <Method name="getCpf" returnType="String" visibility="public"/>
+        <Method name="setCpf" returnType="void" visibility="public">
+          <Argument type="String" name="cpf"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Conta" package="contasPagas" visibility="public" xPosition="920.0" yPosition="2420.0">
+      <Fields>
+        <Field name="idConta" type="String" visibility="private"/>
+        <Field name="dataVencimento" type="String" visibility="private"/>
+        <Field name="dataPagamento" type="String" visibility="private"/>
+        <Field name="pro" type="Produto" visibility="package"/>
+        <Field name="cli" type="Cliente" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdConta" returnType="String" visibility="public"/>
+        <Method name="setIdConta" returnType="void" visibility="public">
+          <Argument type="String" name="idConta"/>
+        </Method>
+        <Method name="getDataVencimento" returnType="String" visibility="public"/>
+        <Method name="setDataVencimento" returnType="void" visibility="public">
+          <Argument type="String" name="dataVencimento"/>
+        </Method>
+        <Method name="getDataPagamento" returnType="String" visibility="public"/>
+        <Method name="setDataPagamento" returnType="void" visibility="public">
+          <Argument type="String" name="dataPagamento"/>
+        </Method>
+        <Method name="visualizarConta" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Produto" package="contasPagas" visibility="public" xPosition="1220.0" yPosition="2420.0">
+      <Fields>
+        <Field name="descricaoProduto" type="String" visibility="private"/>
+        <Field name="valorProduto" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescricaoProduto" returnType="String" visibility="public"/>
+        <Method name="setDescricaoProduto" returnType="void" visibility="public">
+          <Argument type="String" name="descricaoProduto"/>
+        </Method>
+        <Method name="getValorProduto" returnType="String" visibility="public"/>
+        <Method name="setValorProduto" returnType="void" visibility="public">
+          <Argument type="String" name="valorProduto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Programa" package="contasPagas" visibility="public" xPosition="1520.0" yPosition="2420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteErro" package="exception" visibility="public" xPosition="1820.0" yPosition="2420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="metodo1" returnType="void" visibility="package" isStatic="true"/>
+        <Method name="metodo2" returnType="void" visibility="package" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="TesteException" package="exception" visibility="public" xPosition="2120.0" yPosition="2420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="abrirArquivo" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Aluno" package="faculdade_trabalho1" visibility="public" xPosition="20.0" yPosition="2820.0">
+      <Fields>
+        <Field name="nomeA" type="String" visibility="private"/>
+        <Field name="idadeA" type="int" visibility="private"/>
+        <Field name="enderecoA" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeA" returnType="String" visibility="public"/>
+        <Method name="setNomeA" returnType="void" visibility="public">
+          <Argument type="String" name="nomeA"/>
+        </Method>
+        <Method name="getIdadeA" returnType="int" visibility="public"/>
+        <Method name="setIdadeA" returnType="void" visibility="public">
+          <Argument type="int" name="idadeA"/>
+        </Method>
+        <Method name="getEnderecoA" returnType="String" visibility="public"/>
+        <Method name="setEnderecoA" returnType="void" visibility="public">
+          <Argument type="String" name="enderecoA"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Aula" package="faculdade_trabalho1" visibility="public" xPosition="320.0" yPosition="2820.0">
+      <Fields>
+        <Field name="intervalo" type="int" visibility="private"/>
+        <Field name="tempoDuracao" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIntervalo" returnType="int" visibility="public"/>
+        <Method name="setIntervalo" returnType="void" visibility="public">
+          <Argument type="int" name="intervalo"/>
+        </Method>
+        <Method name="getTempoDuracao" returnType="int" visibility="public"/>
+        <Method name="setTempoDuracao" returnType="void" visibility="public">
+          <Argument type="int" name="tempoDuracao"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Disciplina" package="faculdade_trabalho1" visibility="public" xPosition="620.0" yPosition="2820.0">
+      <Fields>
+        <Field name="quantDisciplinas" type="int" visibility="private"/>
+        <Field name="aln" type="Aluno" visibility="package"/>
+        <Field name="pro" type="Professor" visibility="package"/>
+        <Field name="aul" type="Aula" visibility="package"/>
+        <Field name="not" type="Notas" visibility="package"/>
+        <Field name="tur" type="Turma" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Aluno" name="aln"/>
+          <Argument type="Professor" name="pro"/>
+          <Argument type="Aula" name="aul"/>
+          <Argument type="Notas" name="not"/>
+          <Argument type="Turma" name="tur"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getQuantDisciplinas" returnType="int" visibility="public"/>
+        <Method name="setQuantDisciplinas" returnType="void" visibility="public">
+          <Argument type="int" name="quantDisciplinas"/>
+        </Method>
+        <Method name="visualizarDisciplina" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Notas" package="faculdade_trabalho1" visibility="public" xPosition="920.0" yPosition="2820.0">
+      <Fields>
+        <Field name="notaProva1" type="double" visibility="private"/>
+        <Field name="notaProva2" type="double" visibility="private"/>
+        <Field name="MediaNotas" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNotaProva1" returnType="double" visibility="public"/>
+        <Method name="setNotaProva1" returnType="void" visibility="public">
+          <Argument type="double" name="notaProva1"/>
+        </Method>
+        <Method name="getNotaProva2" returnType="double" visibility="public"/>
+        <Method name="setNotaProva2" returnType="void" visibility="public">
+          <Argument type="double" name="notaProva2"/>
+        </Method>
+        <Method name="getMediaNotas" returnType="double" visibility="public"/>
+        <Method name="setMediaNotas" returnType="void" visibility="public">
+          <Argument type="double" name="MediaNotas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Professor" package="faculdade_trabalho1" visibility="public" xPosition="1220.0" yPosition="2820.0">
+      <Fields>
+        <Field name="nomeP" type="String" visibility="private"/>
+        <Field name="nomeDisciplina" type="String" visibility="private"/>
+        <Field name="tempoServico" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeP" returnType="String" visibility="public"/>
+        <Method name="setNomeP" returnType="void" visibility="public">
+          <Argument type="String" name="nomeP"/>
+        </Method>
+        <Method name="getNomeDisciplina" returnType="String" visibility="public"/>
+        <Method name="setNomeDisciplina" returnType="void" visibility="public">
+          <Argument type="String" name="nomeDisciplina"/>
+        </Method>
+        <Method name="getTempoServico" returnType="int" visibility="public"/>
+        <Method name="setTempoServico" returnType="void" visibility="public">
+          <Argument type="int" name="tempoServico"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Teste" package="faculdade_trabalho1" visibility="public" xPosition="1520.0" yPosition="2820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Turma" package="faculdade_trabalho1" visibility="public" xPosition="1820.0" yPosition="2820.0">
+      <Fields>
+        <Field name="listaMatriculados" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getListaMatriculados" returnType="int" visibility="public"/>
+        <Method name="setListaMatriculados" returnType="void" visibility="public">
+          <Argument type="int" name="listaMatriculados"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Enfermeiro" package="hospital" visibility="public" xPosition="2120.0" yPosition="2820.0">
+      <Fields>
+        <Field name="nomeE" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeE" returnType="String" visibility="public"/>
+        <Method name="setNomeE" returnType="void" visibility="public">
+          <Argument type="String" name="nomeE"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Internacao" package="hospital" visibility="public" xPosition="20.0" yPosition="3220.0">
+      <Fields>
+        <Field name="id_internacao" type="String" visibility="private"/>
+        <Field name="motivoInternacao" type="String" visibility="private"/>
+        <Field name="valorDiaInternacao" type="double" visibility="private"/>
+        <Field name="quantDiaInternacao" type="int" visibility="private"/>
+        <Field name="valorTotalInternacao" type="double" visibility="private"/>
+        <Field name="pac" type="Paciente" visibility="package"/>
+        <Field name="med" type="Medico" visibility="package"/>
+        <Field name="enf" type="Enfermeiro" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Paciente" name="pac"/>
+          <Argument type="Medico" name="med"/>
+          <Argument type="Enfermeiro" name="enf"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId_internacao" returnType="String" visibility="public"/>
+        <Method name="setId_internacao" returnType="void" visibility="public">
+          <Argument type="String" name="id_internacao"/>
+        </Method>
+        <Method name="getMotivoInternacao" returnType="String" visibility="public"/>
+        <Method name="setMotivoInternacao" returnType="void" visibility="public">
+          <Argument type="String" name="motivoInternacao"/>
+        </Method>
+        <Method name="getValorDiaInternacao" returnType="double" visibility="public"/>
+        <Method name="setValorDiaInternacao" returnType="void" visibility="public">
+          <Argument type="double" name="valorDiaInternacao"/>
+        </Method>
+        <Method name="getQuantDiaInternacao" returnType="int" visibility="public"/>
+        <Method name="setQuantDiaInternacao" returnType="void" visibility="public">
+          <Argument type="int" name="quantDiaInternacao"/>
+        </Method>
+        <Method name="getValorTotalInternacao" returnType="double" visibility="public"/>
+        <Method name="setValorTotalInternacao" returnType="void" visibility="public">
+          <Argument type="double" name="valorTotalInternacao"/>
+        </Method>
+        <Method name="visualizarInternacao" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Medico" package="hospital" visibility="public" xPosition="320.0" yPosition="3220.0">
+      <Fields>
+        <Field name="nomeM" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeM" returnType="String" visibility="public"/>
+        <Method name="setNomeM" returnType="void" visibility="public">
+          <Argument type="String" name="nomeM"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Paciente" package="hospital" visibility="public" xPosition="620.0" yPosition="3220.0">
+      <Fields>
+        <Field name="nomeP" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNomeP" returnType="String" visibility="public"/>
+        <Method name="setNomeP" returnType="void" visibility="public">
+          <Argument type="String" name="nomeP"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Teste" package="hospital" visibility="public" xPosition="920.0" yPosition="3220.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="AreaCalculavel" package="Interface_01" visibility="public" xPosition="1220.0" yPosition="3220.0">
+      <Methods>
+        <Method name="calculaArea" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="Quadrado" package="Interface_01" visibility="public" xPosition="1520.0" yPosition="3220.0">
+      <Fields>
+        <Field name="lado" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="lado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calculaArea" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Retangulo" package="Interface_01" visibility="public" xPosition="1820.0" yPosition="3220.0">
+      <Fields>
+        <Field name="largura" type="int" visibility="private"/>
+        <Field name="altura" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="largura"/>
+          <Argument type="int" name="altura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calculaArea" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Circulo" package="Interface_01" visibility="public" xPosition="2120.0" yPosition="3220.0">
+      <Fields>
+        <Field name="raio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="calculaArea" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Teste" package="Interface_01" visibility="public" xPosition="20.0" yPosition="3620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Aritmetica" package="sintaxe" visibility="public" xPosition="320.0" yPosition="3620.0">
+      <Fields>
+        <Field name="n1" type="double" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="soma" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="subtracao" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="multiplicacao" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="divisao" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="resto" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Metodos" package="sintaxe" visibility="public" xPosition="620.0" yPosition="3620.0">
+      <Fields>
+        <Field name="n1" type="double" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="soma" returnType="void" visibility="public"/>
+        <Method name="soma2" returnType="double" visibility="public"/>
+        <Method name="soma" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="subtracao" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="multiplicacao" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="divisao" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+        <Method name="resto" returnType="double" visibility="public">
+          <Argument type="double" name="n1"/>
+          <Argument type="double" name="n2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Teste" package="sintaxe" visibility="public" xPosition="920.0" yPosition="3620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteAritmetica" package="sintaxe" visibility="public" xPosition="1220.0" yPosition="3620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteMetodos" package="sintaxe" visibility="public" xPosition="1520.0" yPosition="3620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteMetodos2" package="sintaxe" visibility="public" xPosition="1820.0" yPosition="3620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TesteMetodos3" package="sintaxe" visibility="public" xPosition="2120.0" yPosition="3620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TiposPrimitivos" package="sintaxe" visibility="public" xPosition="20.0" yPosition="4020.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="Autenticavel" package="uml" visibility="public" xPosition="320.0" yPosition="4020.0">
+      <Methods>
+        <Method name="login" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Funcionario" package="uml" visibility="public" isAbstract="true" xPosition="620.0" yPosition="4020.0">
+      <Fields>
+        <Field name="nome" type="String" visibility="private"/>
+        <Field name="cpf" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="relatorio" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gerente" package="uml" visibility="public" xPosition="920.0" yPosition="4020.0">
+      <Fields>
+        <Field name="funcionariosGerenciados" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="login" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="not" source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Notas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="pro" source="contasPagas.Conta" target="contasPagas.Produto" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Turma" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="med" source="hospital.Internacao" target="hospital.Medico" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Professor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="banco_2.ContaCorrente" target="banco_2.ContaTributavel"/>
+    <HasRelation name="pro" source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Professor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="porta1" source="casa.Casa" target="casa.Porta" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="banco.Gerente" target="banco.Funcionario"/>
+    <IsRelation name="is" source="banco.ContaPoupanca" target="banco.Conta"/>
+    <UseRelation source="banco.GerenciadorDeImpostoDeRenda" target="banco_2.Tributavel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="banco_2.ContaTributavel" target="banco_2.Conta"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Interface_01.Quadrado" target="Interface_01.AreaCalculavel"/>
+    <IsRelation name="is" source="banco.ContaCorrente" target="banco.Conta"/>
+    <HasRelation name="cli" source="contasPagas.Conta" target="contasPagas.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="banco.ContaCorrente" target="banco.Tributavel"/>
+    <HasRelation name="aln" source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Aluno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="banco.AtualizadorDeContas" target="contasPagas.Conta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="banco.Supervisor" target="banco.Funcionario"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="banco.ContaPoupanca" target="banco.Conta"/>
+    <HasRelation name="porta2" source="casa.Casa" target="casa.Porta" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="porta3" source="casa.Casa" target="casa.Porta" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Aluno" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="objCliente" source="contasPagas.Conta" target="contasPagas.Cliente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tur" source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Turma" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="enf" source="hospital.Internacao" target="hospital.Enfermeiro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Interface_01.Retangulo" target="Interface_01.AreaCalculavel"/>
+    <HasRelation name="pac" source="hospital.Internacao" target="hospital.Paciente" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Interface_01.Circulo" target="Interface_01.AreaCalculavel"/>
+    <IsRelation name="is" source="banco.Secretaria" target="banco.Funcionario"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="banco.Gerente" target="uml.Autenticavel"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="banco.SeguroDeVida" target="banco.Tributavel"/>
+    <UseRelation source="contasPagas.Conta" target="contasPagas.Conta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="aul" source="faculdade_trabalho1.Disciplina" target="faculdade_trabalho1.Aula" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

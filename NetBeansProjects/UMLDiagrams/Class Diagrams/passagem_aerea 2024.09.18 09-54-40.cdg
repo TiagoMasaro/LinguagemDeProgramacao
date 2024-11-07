@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="passagem_aerea">
+  <ClassDiagramComponents>
+    <Interface name="Embarque" package="passagem_aerea" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Methods>
+        <Method name="realizarEmbarque" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="SistemaDeReservas" package="passagem_aerea" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="voos" type="List&lt;Voo&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="adicionarVoo" returnType="Voo" visibility="public">
+          <Argument type="Voo" name="voo"/>
+        </Method>
+        <Method name="buscarVoos" returnType="Voo" visibility="public">
+          <Argument type="String" name="codigo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Teste" package="passagem_aerea" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Voo" package="passagem_aerea" visibility="public" isAbstract="true" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="codigo" type="String" visibility="private"/>
+        <Field name="origem" type="String" visibility="private"/>
+        <Field name="destino" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigo"/>
+          <Argument type="String" name="origem"/>
+          <Argument type="String" name="destino"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="descontoEspecial" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="getCodigo" returnType="String" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="String" name="codigo"/>
+        </Method>
+        <Method name="getOrigem" returnType="String" visibility="public"/>
+        <Method name="setOrigem" returnType="void" visibility="public">
+          <Argument type="String" name="origem"/>
+        </Method>
+        <Method name="getDestino" returnType="String" visibility="public"/>
+        <Method name="setDestino" returnType="void" visibility="public">
+          <Argument type="String" name="destino"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VooException" package="passagem_aerea" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="String" name="string"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="VooInternacional" package="passagem_aerea" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigo"/>
+          <Argument type="String" name="origem"/>
+          <Argument type="String" name="destino"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="descontoEspecial" returnType="double" visibility="public"/>
+        <Method name="realizarEmbarque" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="VooNacional" package="passagem_aerea" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigo"/>
+          <Argument type="String" name="origem"/>
+          <Argument type="String" name="destino"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="descontoEspecial" returnType="double" visibility="public"/>
+        <Method name="realizarEmbarque" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="passagem_aerea.VooInternacional" target="passagem_aerea.Embarque"/>
+    <HasRelation name="voos" source="passagem_aerea.SistemaDeReservas" target="passagem_aerea.Voo" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Voo&gt;"/>
+    <UseRelation source="passagem_aerea.SistemaDeReservas" target="passagem_aerea.Voo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="passagem_aerea.VooNacional" target="passagem_aerea.Embarque"/>
+    <IsRelation name="is" source="passagem_aerea.VooInternacional" target="passagem_aerea.Voo"/>
+    <IsRelation name="is" source="passagem_aerea.VooNacional" target="passagem_aerea.Voo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
